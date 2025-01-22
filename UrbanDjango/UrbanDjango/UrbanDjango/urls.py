@@ -17,7 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from Task2.views import cl, fu
-from Task3.views import home, cats, func
+from Task4.views import home, cats, func
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -25,5 +25,5 @@ urlpatterns = [
     path('fu/', fu),
     path('', home),
     path('cats/', cats),
-    path('dogs/', func)
+    path('func/', func)
 ]
